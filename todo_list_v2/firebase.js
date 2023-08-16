@@ -21,8 +21,8 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firestore and get a reference to the service
 const db = getFirestore(app);
 
-// Example
-await addDoc(collection(db, "todo-items"), {
+// Example that works
+/* await addDoc(collection(db, "todo-items"), {
     status: "Incomplete",
-    text: "Clean the kitchen"
-  });
+    text: "Take out trash"
+  }); */
