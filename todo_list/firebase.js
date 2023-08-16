@@ -1,17 +1,25 @@
+
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js';
+import { getFirestore, collection, getDocs, setDoc, addDoc } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js';
+import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js';
+import { getAuth } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js';
+
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDBpNacRJOo4dLXngVZ-iOCcirvAiaeMIg",
-    authDomain: "todo-list-e63a7.firebaseapp.com",
-    databaseURL: "https://todo-list-e63a7-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "todo-list-e63a7",
-    storageBucket: "todo-list-e63a7.appspot.com",
-    messagingSenderId: "36588320959",
-    appId: "1:36588320959:web:459f781ca5c0a7140fae0a",
-    measurementId: "G-F58B4W9ZGH"
-};
+    apiKey: "AIzaSyAxOIm7rswOnGn346ArhDWVXwmUwcAAyqY",
+    authDomain: "todo-list-backend-3d745.firebaseapp.com",
+    projectId: "todo-list-backend-3d745",
+    storageBucket: "todo-list-backend-3d745.appspot.com",
+    messagingSenderId: "424400323009",
+    appId: "1:424400323009:web:15da67f3e5b7fb2f5d6f40",
+    measurementId: "G-KLQJS36Z99"
+  };
+  
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-// Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+  const auth = getAuth(app);
+  
