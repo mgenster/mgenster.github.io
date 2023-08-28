@@ -1,6 +1,3 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, doc, setDoc, addDoc } from "firebase/firestore";
-
 const firebaseConfig = {
     apiKey: "AIzaSyAxOIm7rswOnGn346ArhDWVXwmUwcAAyqY",
     authDomain: "todo-list-backend-3d745.firebaseapp.com",
@@ -13,7 +10,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+//const app = initializeApp(firebaseConfig);
+
+firebase.initializeApp(firebaseConfig)
 
 // ----------- Cloud Firestore ---------------------------------------------------
 

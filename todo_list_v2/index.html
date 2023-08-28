@@ -8,7 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./style.css">
+    <script type="module">
+        import { initializeApp } from "firebase/app";
+        import { getFirestore, collection, doc, setDoc, addDoc } from "firebase/firestore"; 
+    </script>
+    <script src="./firebase.js"></script>
+    <script src="./app_v2.js"></script>
+
     <title>Todo List</title>
     </head>
 <body>
@@ -23,7 +31,7 @@
             <select name="todos" class="filter-todo">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
+                <option value="incompleted">Incompleted</option>
             </select>
         </div>
     </form>
@@ -31,6 +39,5 @@
         <ul class="todo-list"></ul>
     </div>
 
-    <script src="./app.js"></script>
 </body>
 </html>
